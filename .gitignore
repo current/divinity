@@ -1,0 +1,21 @@
+# build directories
+build/
+build-*/
+out/
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.log
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.swp
+*.user
+*.aps
