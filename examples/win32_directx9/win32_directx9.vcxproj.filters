@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="external">
+      <UniqueIdentifier>{79B633EF-5197-4AEA-9C6D-FBF45BE5FCB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\imgui">
+      <UniqueIdentifier>{0F234DA9-5AB6-4047-BDE5-9BD17A84FD94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\imgui\backends">
+      <UniqueIdentifier>{8483EC40-2188-49E5-9EDF-BDA41741DA20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity">
+      <UniqueIdentifier>{3B0D11AD-905B-454B-A73F-E92702BF4606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\render">
+      <UniqueIdentifier>{9C656E09-4567-43D9-A760-360148CD6AFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\ui">
+      <UniqueIdentifier>{36C5F800-AC22-41C6-9DC5-C9EDB5089FFF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\ui\elements">
+      <UniqueIdentifier>{948CDFEE-42C1-4E62-8311-3CEC2806D466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\util">
+      <UniqueIdentifier>{E1F5E95A-7153-4D1C-A1F1-EBCD50DDD4E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\theme">
+      <UniqueIdentifier>{5A62D214-A2F7-4A73-8F58-1DE091C861DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="divinity\assets">
+      <UniqueIdentifier>{738005E7-156B-43AB-A5FE-870CE3471187}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\imgui\imgui.cpp"><Filter>external\imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_demo.cpp"><Filter>external\imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_draw.cpp"><Filter>external\imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_tables.cpp"><Filter>external\imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\imgui_widgets.cpp"><Filter>external\imgui</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_dx9.cpp"><Filter>external\imgui\backends</Filter></ClCompile>
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_win32.cpp"><Filter>external\imgui\backends</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\custom.cpp"><Filter>divinity</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\render\animation_controller.cpp"><Filter>divinity\render</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\render\render_wrapper.cpp"><Filter>divinity\render</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\window.cpp"><Filter>divinity\ui</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\tab_controller.cpp"><Filter>divinity\ui</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\child_controller.cpp"><Filter>divinity\ui</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_button.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_checkbox.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_colorpicker.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_dropdown.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_keybind.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_label.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_multiselect.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_slider.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_slide_select.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="..\..\divinity\ui\elements\elem_textinput.cpp"><Filter>divinity\ui\elements</Filter></ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\imgui\imconfig.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imgui.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imgui_internal.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imstb_rectpack.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imstb_textedit.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\imstb_truetype.h"><Filter>external\imgui</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_dx9.h"><Filter>external\imgui\backends</Filter></ClInclude>
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_win32.h"><Filter>external\imgui\backends</Filter></ClInclude>
+    <ClInclude Include="..\..\external\tinyformat.h"><Filter>external</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\divinity.hpp"><Filter>divinity</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\custom.hpp"><Filter>divinity</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\render\animation_controller.hpp"><Filter>divinity\render</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\render\render_wrapper.hpp"><Filter>divinity\render</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\theme\color_pallete.hpp"><Filter>divinity\theme</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\util\bytes.hpp"><Filter>divinity\util</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\util\util.hpp"><Filter>divinity\util</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\ui\window.hpp"><Filter>divinity\ui</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\ui\content_controller.hpp"><Filter>divinity\ui</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\assets\fonts\fa_font.hpp"><Filter>divinity\assets</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\assets\fonts\fa_icons.hpp"><Filter>divinity\assets</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_extralight.hpp"><Filter>divinity\assets</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_regular.hpp"><Filter>divinity\assets</Filter></ClInclude>
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_semibold.hpp"><Filter>divinity\assets</Filter></ClInclude>
+  </ItemGroup>
+</Project>

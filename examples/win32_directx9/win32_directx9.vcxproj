@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4165A294-21F2-44CA-9B38-E3F935ABADF5}</ProjectGuid>
+    <RootNamespace>divinity</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\imgui;..\..\external\imgui\backends;..\..\external;..\..\divinity;..\..\divinity\ui;..\..\divinity\ui\elements;..\..\divinity\render;..\..\divinity\util;..\..\divinity\theme;..\..\divinity\assets\fonts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\imgui;..\..\external\imgui\backends;..\..\external;..\..\divinity;..\..\divinity\ui;..\..\divinity\ui\elements;..\..\divinity\render;..\..\divinity\util;..\..\divinity\theme;..\..\divinity\assets\fonts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\external\imgui;..\..\external\imgui\backends;..\..\external;..\..\divinity;..\..\divinity\ui;..\..\divinity\ui\elements;..\..\divinity\render;..\..\divinity\util;..\..\divinity\theme;..\..\divinity\assets\fonts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\external\imgui;..\..\external\imgui\backends;..\..\external;..\..\divinity;..\..\divinity\ui;..\..\divinity\ui\elements;..\..\divinity\render;..\..\divinity\util;..\..\divinity\theme;..\..\divinity\assets\fonts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\external\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\external\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\external\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\external\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_dx9.cpp" />
+    <ClCompile Include="..\..\external\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\divinity\custom.cpp" />
+    <ClCompile Include="..\..\divinity\render\animation_controller.cpp" />
+    <ClCompile Include="..\..\divinity\render\render_wrapper.cpp" />
+    <ClCompile Include="..\..\divinity\ui\window.cpp" />
+    <ClCompile Include="..\..\divinity\ui\tab_controller.cpp" />
+    <ClCompile Include="..\..\divinity\ui\child_controller.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_button.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_checkbox.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_colorpicker.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_dropdown.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_keybind.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_label.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_multiselect.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_slider.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_slide_select.cpp" />
+    <ClCompile Include="..\..\divinity\ui\elements\elem_textinput.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\imgui\imconfig.h" />
+    <ClInclude Include="..\..\external\imgui\imgui.h" />
+    <ClInclude Include="..\..\external\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\external\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\external\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\external\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_dx9.h" />
+    <ClInclude Include="..\..\external\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\external\tinyformat.h" />
+    <ClInclude Include="..\..\divinity\divinity.hpp" />
+    <ClInclude Include="..\..\divinity\custom.hpp" />
+    <ClInclude Include="..\..\divinity\render\animation_controller.hpp" />
+    <ClInclude Include="..\..\divinity\render\render_wrapper.hpp" />
+    <ClInclude Include="..\..\divinity\theme\color_pallete.hpp" />
+    <ClInclude Include="..\..\divinity\util\bytes.hpp" />
+    <ClInclude Include="..\..\divinity\util\util.hpp" />
+    <ClInclude Include="..\..\divinity\ui\window.hpp" />
+    <ClInclude Include="..\..\divinity\ui\content_controller.hpp" />
+    <ClInclude Include="..\..\divinity\assets\fonts\fa_font.hpp" />
+    <ClInclude Include="..\..\divinity\assets\fonts\fa_icons.hpp" />
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_extralight.hpp" />
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_regular.hpp" />
+    <ClInclude Include="..\..\divinity\assets\fonts\kanit_semibold.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
