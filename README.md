@@ -4,6 +4,8 @@ A menu framework for C++ built on top of [Dear ImGui](https://github.com/ocornut
 
 The framework was written as contract work. The client broke the terms of the agreement, so the deal is off and the code is public. It was built for one specific product, so a few choices in it are opinionated, but the core is a general purpose menu framework. Take it apart, learn from it, build your own thing on it.
 
+Public since Feb 2024.
+
 imgui already covers widgets. What it does not cover is everything around them when the goal is a real menu: the render layer, the window, moving between pages, the state each part of the UI needs. divinity sits one level above imgui and provides those parts.
 
 ## Features
